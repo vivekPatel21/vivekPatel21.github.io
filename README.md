@@ -1,2 +1,6 @@
 # vivekPatel21.github.io
-A webite that houses all the information on me
+<html>
+  <head>
+  <title><h1>Vivek Patel</h1></title>
+  </head>
+</html>
