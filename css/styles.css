@@ -148,7 +148,7 @@ p{
   justify-content: center;
 }
 figure {
-  background: #344e41;
+  background: #3133a8;
   color: #dad7cd;
 }
 figcaption{
@@ -221,7 +221,7 @@ figcaption{
 
 /* Link in normal state */
 a {
-  color: #242582;
+  color: #105a6c;
   text-decoration: underline;
 }
 
@@ -233,7 +233,7 @@ a:hover {
 
 /* Link when clicked */
 a:active {
-  color: #2f2fa2;
+  color: #000000;
   text-decoration: none;
 }
 
