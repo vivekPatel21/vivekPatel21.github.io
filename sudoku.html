@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vivek Patel</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> About</a>
+            <a href="projects.html" style="background-color: #707bd4;"><i class="fa fa-cogs" aria-hidden="true"></i>
+                Projects</a>
+            <a href="work.html"><i class="fa fa-code" aria-hidden="true"></i> Work</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="images/Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
+
+        </nav>
+
+        <h1>Nth Dimension Sudoku Solver</h1>
+        <p>Tags: Java, recursion, backtracking, data structures and algorithms</p>
+        <a href="https://github.com/vivekPatel21/SodukuSolver"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="images/SudokuSolver-main.zip"><i class="fa fa-download" aria-hidden="true"></i></a>
+
+        <p>This is a sudoku program I programmed in Java that is capable of solving any sudoku problem of any given
+            dimension.
+            It can solve the classic 9x9 sudoku board or even the 50x50 sudoku board if you so choose. It comes complete
+            with JUnit
+            testing implemented and a few demo problems and examples to help you get started. You can find the github
+            repository
+            <a href="https://github.com/vivekPatel21/SodukuSolver">here</a> or you can download it yourself <a
+                href="images\SodukuSolver-main.zip">here</a>.
+        </p>
+
+        <img src="images\Sudoku.jpg" alt="An example of my sudoku solver in action">
+
+        <h2>Guide</h2>
+        <p>The program reads text files as input with the first number being the dimensions of the sudoku board and the
+            periods
+            representing unknown tiles. You can create this text file by copying what you see on the board then feeding
+            it to the program.
+            It will then tell you the first solution it finds, or tell you that the puzzle is unsolvable.
+        </p>
+        <img src="images\SudokuExample.jpg" alt="example of what an input file should look like">
+        <p>Here is an example of how your input file should look</p>
+
+        <h2>Technical Details</h2>
+        <p>The time and space complexity of this program is O(n^n) where n is the dimensions of the puzzle which does
+            sound worrying,
+            but by taking advantage of backtracking and recursive techniques, this time is greatly reduced but is not
+            reflected in
+            big O notation.
+            The puzzle is solved by creating a 2D array to store the current working solution the program is developing.
+            The program works by creating a tree structure with every possible solution. The program however only
+            works on one branch at a time
+            which greatly improves performance. The program navigates the tree using post order tree traversal.
+        </p>
+        <img src="images\Postorder-traversal.gif" alt="A gif of postorder tree traversal">
+        <p>GIF source: </p><a
+            href="https://commons.wikimedia.org/wiki/File:Postorder-traversal.gif">https://commons.wikimedia.org/wiki/File:Postorder-traversal.gif</a>
+        <p>The program goes through the sudoku problem trying a new number in each unfilled slot. After every new
+            number, a battery of tests are used to make sure the
+            number is legal. If it isn't, it backtracks to a previous branch in post order by using recursion. This
+            process is repeated
+            unti there are no more branches meaning there is no solution, or until the end of the 2D array is reached
+            meaning there is a solution.
+
+        </p>
+
+
+
+
+    </div>
+
+
+
+    <!-- javascript stuff -->
+
+</body>
+
+</html>

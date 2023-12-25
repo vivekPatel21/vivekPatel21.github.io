@@ -81,7 +81,7 @@ html {
 }
 /*Changes background and font color*/
 body {
-  background-color: #707bd4;
+  background-color: #242582;
   color: #dad7cd;
 }
 /*General container for most pages*/
@@ -221,19 +221,19 @@ figcaption{
 
 /* Link in normal state */
 a {
-  color: #A3B18A;
+  color: #242582;
   text-decoration: underline;
 }
 
 /* Link when hovered */
 a:hover {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
 }
 
 /* Link when clicked */
 a:active {
-  color: #588157;
+  color: #2f2fa2;
   text-decoration: none;
 }
 

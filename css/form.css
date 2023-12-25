@@ -55,7 +55,7 @@ I have made sporatic changes throughout the css to fit the needs of my website*/
 #fs-frm [type="textarea"] {
   width: 100%;
   color: black;
-  background-color: #A3B18A;
+  background-color: #E1C699;
 
 }
 #fs-frm [type="button"],
@@ -67,7 +67,7 @@ I have made sporatic changes throughout the css to fit the needs of my website*/
   -moz-appearance: button;
   appearance: button;
   color: black;
-  background-color: #A3B18A;
+  background-color: #E1C699;
 
 }
 #fs-frm [type="button"]:focus,

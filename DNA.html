@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vivek Patel</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> About</a>
+            <a href="projects.html" style="background-color: #707bd4;"><i class="fa fa-cogs" aria-hidden="true"></i>
+                Projects</a>
+            <a href="work.html"><i class="fa fa-code" aria-hidden="true"></i> Work</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="images/Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
+
+        </nav>
+
+        <h1>Nth Length DNA sequencer</h1>
+        <p>Tags: C++, recursion, and algorithms</p>
+        <a href="https://github.com/vivekPatel21/DNAReade"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="images\DNAReader-main.zip"><i class="fa fa-download" aria-hidden="true"></i></a>
+
+        <p>This is a DNA sequencer that I programmed in C++ capable of reading any DNA sequence and returing a complimenting
+            strand and spliting the DNA before printing the lists back out.
+            It can sequence a DNA sequence of any length and will even check for minor problems such as a nucleotide not being
+            correct, or there being a space in the strand, returning error messages as needed.
+            For testing preferably you are going to need to provide a "DNA STRAND HERE" "4" for the DNA strand and separater.
+            <a href="https://github.com/vivekPatel21/DNAReade">here</a> or you can download it yourself <a
+                href="images\DNAReader-main.zip">here</a>.
+        </p>
+
+        <img src="images\DNASequencerOutput.png" alt="An example of my sequencer and separater in action.">
+
+        <h2>Guide</h2>
+        <p>The program checks for 2 inputs, it checks for a DNA strand and a number to separate the strand and compliment into lists.
+            Afterwards the program will check for a few things such as spaces and things that should not be in a DNA strand
+            and than it will print out the strands in lists, the size of the lists is determined by the separater.
+        </p>
+        <img src="images\DNASequencerInput.png" alt="example of what an input command should look like">
+        <p>Here is an example of how your input file should look</p>
+
+        <h2>Technical Details</h2>
+        <p>The time and space complexity of this program is O(n) where n is the size of the DNA Sequence.
+            There are efforts to try to make the code more efficient an quick through recursion to generate the
+            complimenting strand.
+            The separation is done by keeping everything in a 2D array to make things more efficient and than printing
+            everything out through a function, to maximize efficiency of the code.
+        </p>
+
+    </div>
+
+
+
+    <!-- javascript stuff -->
+
+</body>
+
+</html>
