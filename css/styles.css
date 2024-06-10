@@ -82,7 +82,7 @@ html {
 /*Changes background and font color*/
 body {
   background-color: #2f3078;
-  color: #dad7cd;
+  color: #007BA7;
 }
 /*General container for most pages*/
 
@@ -149,7 +149,7 @@ p{
 }
 figure {
   background: #3133a8;
-  color: #dad7cd;
+  color: #007BA7;
 }
 figcaption{
   text-align: center;
