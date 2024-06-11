@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vivek Patel</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> About</a>
+            <a href="projects.html" style="background-color: #FFFDD0;"><i class="fa fa-cogs" aria-hidden="true"></i>
+                Projects</a>
+            <a href="work.html"><i class="fa fa-code" aria-hidden="true"></i> Work</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="images\Vivek Patel Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i> Resume</a>
+
+        </nav>
+
+        <h1>Nth Dimension Sudoku Solver</h1>
+        <p>Tags: Java, recursion, backtracking, data structures and algorithms</p>
+        <a href="https://github.com/vivekPatel21/SodukuSolver"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="images/SudokuSolver-main.zip"><i class="fa fa-download" aria-hidden="true"></i></a>
+
+        <p>This is a wire routing program that I had programmed in java. The overall concept is that 
+            I want to connect a set of points on a board of any size, with a amount of obstacles that the 
+            user wants to place. 
+            <a href="https://github.com/vivekPatel21/SodukuSolver">here</a> or you can download it yourself <a
+                href="images\SodukuSolver-main.zip">here</a>.
+        </p>
+
+        <img src="images\Sudoku.jpg" alt="An example of my sudoku solver in action">
+
+        <h2>Guide</h2>
+        <p>The Program reads through a test file and a certain size. The first two lines are going to set the dimensions of
+            the board. Afterwards we come to the obstacles, where the number of obstacles is going to determine the next o lines,
+            where o is the number of obstacles. Then for the obstacles, we use the (x,y) coordinate and (x_2,y_2) for the end points
+            there to make an obstacle line. The line after that is the amount of wires to connect, and it uses the same logic for the 
+            obstacles. For examples I recommend going to the github page and looking at the README.
+        </p>
+        <img src="images\SudokuExample.jpg" alt="example of what an input file should look like">
+        <p>Here is an example of how your input file should look</p>
+
+        <h2>Technical Details</h2>
+        <p>The time and space complexity of this program is O(n*m) where n is the dimensions (which could be 3x2) 
+            and m is the number of points that need to be connected. Which can sound worrying on the time it takes to solve,
+            but by taking advantage of backtracking and recursive techniques, this time is greatly reduced but is not
+            reflected in
+            big O notation.
+            The puzzle is solved by creating a 2D array to store the current working solution the program is developing.
+            The program works by going through and trying to connect the points, and if it fails the program reorders
+            and attempts again, until it exhausts all options. This greatly reduces time, but it will not be refected 
+            in Big-O notation.
+        </p>
+        <p>GIF source: </p><a
+            href="https://commons.wikimedia.org/wiki/File:Postorder-traversal.gif">https://commons.wikimedia.org/wiki/File:Postorder-traversal.gif</a>
+        <p>The program goes through the sudoku problem trying a new number in each unfilled slot. After every new
+            number, a battery of tests are used to make sure the
+            number is legal. If it isn't, it backtracks to a previous branch in post order by using recursion. This
+            process is repeated
+            unti there are no more branches meaning there is no solution, or until the end of the 2D array is reached
+            meaning there is a solution.
+        </p>
+
+
+
+
+    </div>
+
+
+
+    <!-- javascript stuff -->
+
+</body>
+
+</html>
