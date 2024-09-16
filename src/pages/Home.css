@@ -1,0 +1,21 @@
+/* Home.css */
+.home-page {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  min-height: 100vh;
+}
+
+.header-container {
+  margin-bottom: 60px; /* Space between the title and the ImageTextComponent */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Optional: Adjust top margin if needed to move header higher */
+}
+
+.header-container h1 {
+  margin: 0; /* Reset any default margin */
+}

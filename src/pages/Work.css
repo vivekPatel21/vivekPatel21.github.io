@@ -1,0 +1,81 @@
+.work-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    background-color: #f0f0f0; /* Light background for the entire page */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.work-container {
+    display: flex;
+    gap: 20px; /* Spacing between work boxes */
+    justify-content: center; /* Center-aligns the work boxes */
+    flex-wrap: wrap; /* Allows wrapping of items */
+}
+
+.work-box {
+    width: 300px; /* Width of each work box */
+    height: 400px; /* Height of each work box */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+}
+
+.work-box:hover {
+    transform: translateY(-10px); /* Pops out effect on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.position {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.company {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.description-box {
+    width: 80%;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.description-box p {
+    font-size: 1.2rem;
+    color: #333;
+}

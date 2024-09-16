@@ -1,0 +1,31 @@
+/* Style for the footer bar */
+.footer-bar {
+  position: absolute; /* Positions the footer relative to the nearest positioned ancestor */
+  bottom: 0; /* Aligns it to the bottom of the content area */
+  left: 0; /* Aligns it to the left edge */
+  width: 100%; /* Stretches the footer bar across the entire width of the viewport */
+  background-color: #282c34; /* Background color of the footer bar */
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  padding: 10px; /* Adds padding inside the footer bar */
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the top of the footer bar */
+  border-radius: 0; /* Removes rounded corners */
+}
+
+/* Style for the icons container */
+.footer-icons {
+  display: flex;
+  gap: 20px; /* Spacing between the icons */
+}
+
+/* Style for individual social icons */
+.social-icon {
+  color: #61dafb; /* Color of the icons */
+  font-size: 2rem; /* Size of the icons */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Change icon color on hover */
+.footer-icons a:hover .social-icon {
+  color: #ffffff; /* Icon color on hover */
+}

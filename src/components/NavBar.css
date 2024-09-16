@@ -1,39 +1,57 @@
-/* NavBar.css */
+.navbar-container {
+  position: absolute; /* Fix the container to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Span the full width of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: #333; /* Background color of the navbar */
+}
+
+/* Style the navbar itself */
 .navbar {
-    background-color: #333;
-    padding: 10px;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin: 0 10px;
-  }
-  
-  .nav-button {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between icon and text */
-  }
-  
-  .nav-button:hover {
-    background-color: #777;
-  }
-  
-  .nav-icon {
-    width: 24px; /* Adjust icon size */
-    height: 24px;
-  }
-  
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add padding around the navbar */
+  width: 100%; /* Ensure navbar spans full width */
+  background-color: #333; /* Navbar background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+}
+
+/* Style the list items inside the navbar */
+.nav-list {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Remove default list styling */
+}
+
+/* Style each nav button */
+.nav-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px; /* Makes the edges curved */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for buttons */
+.nav-button:hover {
+  background-color: #777;
+}
+
+/* Style the nav links */
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* Ensure the body content is not hidden behind the navbar */
+body {
+  margin: 0;
+  padding-top: 60px; /* Adjust this value based on the height of your navbar */
+}
