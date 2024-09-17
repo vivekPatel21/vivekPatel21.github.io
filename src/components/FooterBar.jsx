@@ -8,7 +8,7 @@ const FooterBar = () => {
     <div className="footer-bar">
       <div className="footer-icons">
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/vivekPatel21"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -16,7 +16,7 @@ const FooterBar = () => {
           <FontAwesomeIcon icon={faGithub} className="social-icon" />
         </a>
         <a
-          href="https://github.com/vivekPatel21"
+          href="https://www.linkedin.com/in/patevig/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
