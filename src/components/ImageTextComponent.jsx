@@ -6,7 +6,7 @@ const ImageTextComponent = () => {
     <div className="image-text-container">
       <div className="image-section">
         <img
-          src={'profPic.jpg'}
+          src={'public/profPic.jpg.jpg'}
           alt="Static Display"
           className="display-image"
         />
