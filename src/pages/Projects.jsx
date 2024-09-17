@@ -9,10 +9,10 @@ const Projects = () => {
       <h1>My Projects</h1>
       <div className="project-container">
         <ProjectBox
-          title="Project 1"
-          image="/images/project1.jpg" // Update path as needed
+          title="Sudoku Solver"
+          image="sudokuIcon.jpg" // Update path as needed
           projectLink="/project1" // Update with actual project page link
-          githubLink="https://github.com/yourusername/project1"
+          githubLink="https://github.com/vivekPatel21/SodukuSolver"
         />
         <ProjectBox
           title="Project 2"

@@ -5,10 +5,11 @@ import './App.css';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Work from './pages/Work';
-import Resume from './pages/Resume';
+import Project1 from './pages/Project1';
 
 function App() {
   return (
+    <div className = "">
     <Router>
       <div className="App">
         {/* Adding the NavBar component at the top */}
@@ -18,10 +19,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/work" element={<Work />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/project1" element = {<Project1 />} />
         </Routes>
       </div>
     </Router>
+    </div>
   );
 }
 

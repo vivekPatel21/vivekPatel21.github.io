@@ -1,27 +1,35 @@
+/* Style for the entire Work Page */
 .work-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px;
-    background-color: #f0f0f0; /* Light background for the entire page */
+    padding: 60px; /* Adjust padding if needed */
+    background-color: #e4d5b7; /* Light background for the entire page */
+    min-height: 100vh; /* Ensures the page covers the full viewport height */
+    margin: 0; /* Remove default margin */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element’s total width and height */
 }
 
+/* Style for the header */
 h1 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
+/* Container for work boxes */
 .work-container {
     display: flex;
-    gap: 20px; /* Spacing between work boxes */
+    gap: 30px; /* Spacing between work boxes */
     justify-content: center; /* Center-aligns the work boxes */
     flex-wrap: wrap; /* Allows wrapping of items */
+    flex-grow: 1; /* Allows the container to grow and push the footer down */
 }
 
+/* Style for each work box */
 .work-box {
     width: 300px; /* Width of each work box */
     height: 400px; /* Height of each work box */
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -31,26 +39,30 @@ h1 {
     padding: 10px;
     position: relative;
     text-align: center;
-    background-color: #fff;
+    background-color: #fff; /* Background color for work boxes */
 }
 
+/* Hover effect for work boxes */
 .work-box:hover {
     transform: translateY(-10px); /* Pops out effect on hover */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Style for position text in work box */
 .position {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+/* Style for company text in work box */
 .company {
     font-size: 1.2rem;
     font-weight: 600;
     margin-top: 10px;
 }
 
+/* Container for job images */
 .image-container {
     flex: 1;
     display: flex;
@@ -58,23 +70,26 @@ h1 {
     align-items: center;
 }
 
+/* Style for job images */
 .job-image {
     max-width: 100%;
     max-height: 100%;
     border-radius: 8px;
 }
 
+/* Style for description box */
 .description-box {
-    width: 80%;
+    width: 70%;
     margin-top: 30px;
-    padding: 20px;
+    padding: -300px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #fff; /* Background color for description box */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+/* Style for text in description box */
 .description-box p {
     font-size: 1.2rem;
     color: #333;

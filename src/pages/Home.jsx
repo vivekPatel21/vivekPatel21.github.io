@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageTextComponent from '../components/ImageTextComponent';
 import './Home.css';
+import './global.css';
 import FooterBar from '../components/FooterBar';
 
 const Home = () => {

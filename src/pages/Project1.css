@@ -1,0 +1,63 @@
+.project-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes up at least the full viewport height */
+}
+
+.project-title {
+  text-align: center;
+  padding:30px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif; /* Set font to Arial */
+  color: #000; /* Nice black color */
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  gap: 20px; /* Space between elements */
+}
+
+.project-details {
+  font-family: Arial, sans-serif; /* Set font to Arial */
+  color: #000; /* Nice black color */
+}
+
+.project-image-wrapper {
+  display: flex;
+  justify-content: center; /* Center align images */
+  gap: 20px; /* Space between images */
+}
+
+.project-image-container {
+  flex: 1; /* Allow containers to grow and shrink */
+  max-width: 45%; /* Limit width to fit side by side */
+}
+
+.project-image {
+  width: 100%; /* Make images fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners for images */
+}
+
+.project-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bar {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top */
+}

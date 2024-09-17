@@ -16,7 +16,7 @@ const Work = () => {
       position: 'Undergraduate Teaching Assistant',
       company: 'Indiana University',
       image: 'job2.jpg',
-      description: 'Assisted in teaching and guiding students in understanding fundamental concepts of low-level computing and programming languages',
+      description: 'Assisted in teaching and guiding students in understanding fundamental concepts of low-level computing and programming languages.',
     },
   ];
 
@@ -38,7 +38,7 @@ const Work = () => {
           >
             <div className="position">{job.position}</div>
             <div className="image-container">
-              <img src={`./images/${job.image}`} alt={job.position} className="job-image" />
+              <img src={`${job.image}`} alt={job.position} className="job-image" />
             </div>
             <div className="company">{job.company}</div>
           </div>

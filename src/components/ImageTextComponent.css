@@ -5,8 +5,9 @@
     height: 600px; /* Adjusted height */
     border: 1px solid #ccc; /* Border for the whole container */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Centers the box horizontally and raises it from the top */
+    margin: 0px auto; /* Centers the box horizontally and raises it from the top */
     border-radius: 0; /* Sharp edges */
+    overflow: hidden; /* Ensures no scroll bars appear */
 }
 
 /* Left section for the image */
@@ -22,6 +23,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover; /* Makes sure the image covers the entire section */
+    display: block; /* Removes default inline spacing */
 }
 
 /* Right section for the text */
@@ -34,6 +36,7 @@
     background-color: #f1ecec; /* Light background for the text */
     border-right: none; /* Hides the right border */
     text-align: left; /* Align text to the left */
+    overflow: hidden; /* Prevent text overflow */
 }
 
 /* Custom text styles */
