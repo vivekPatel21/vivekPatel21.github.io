@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vivekPatel21.github.io/static/css/main.1c7e7ac9.css",
-    "main.js": "/vivekPatel21.github.io/static/js/main.3a77b03e.js",
-    "static/js/453.d91c0b9c.chunk.js": "/vivekPatel21.github.io/static/js/453.d91c0b9c.chunk.js",
-    "index.html": "/vivekPatel21.github.io/index.html",
-    "main.1c7e7ac9.css.map": "/vivekPatel21.github.io/static/css/main.1c7e7ac9.css.map",
-    "main.3a77b03e.js.map": "/vivekPatel21.github.io/static/js/main.3a77b03e.js.map",
-    "453.d91c0b9c.chunk.js.map": "/vivekPatel21.github.io/static/js/453.d91c0b9c.chunk.js.map"
+    "main.css": "/static/css/main.1c7e7ac9.css",
+    "main.js": "/static/js/main.e2c78807.js",
+    "static/js/453.d91c0b9c.chunk.js": "/static/js/453.d91c0b9c.chunk.js",
+    "index.html": "/index.html",
+    "main.1c7e7ac9.css.map": "/static/css/main.1c7e7ac9.css.map",
+    "main.e2c78807.js.map": "/static/js/main.e2c78807.js.map",
+    "453.d91c0b9c.chunk.js.map": "/static/js/453.d91c0b9c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c7e7ac9.css",
-    "static/js/main.3a77b03e.js"
+    "static/js/main.e2c78807.js"
   ]
 }
