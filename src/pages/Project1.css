@@ -36,7 +36,7 @@
 }
 
 .project-image {
-  width: 100%; /* Make images fill the container */
+  width: 90%; /* Make images fill the container */
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Optional: rounded corners for images */
 }

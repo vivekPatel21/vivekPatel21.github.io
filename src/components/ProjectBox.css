@@ -1,60 +1,67 @@
 .project-box {
-    width: 300px; /* Adjust width as needed */
-    height: 400px; /* Adjust height as needed */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  .project-box:hover {
-    transform: translateY(-10px); /* Pops out effect */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
-  .project-link {
-    text-decoration: none;
-    color: inherit;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .project-title {
-    padding: 16px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .project-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fafafa;
-  }
-  
-  .project-image {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  
-  .github-link {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .github-icon {
-    font-size: 2rem;
-  }
-  
+  width: 300px; /* Adjust the width as necessary */
+  height: 400px; /* Adjust the height as necessary */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fafafa;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Title section */
+.project-title {
+  padding: 8px; /* Adjust padding as needed */
+  background-color: #f7f7f7;
+  font-size: 1rem; /* Adjust font size as needed */
+  font-weight: bold; /* Changed to bold for better visibility */
+  text-align: center;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  border-bottom: 1px solid #ddd;
+  flex-shrink: 0; /* Prevent title from shrinking */
+}
+
+/* Image section */
+.project-content {
+  flex-grow: 1; /* Take up all remaining space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 0; /* Remove padding */
+}
+
+.project-image {
+  width: 100%;
+  height: 100%; /* Ensure the image takes up full height */
+  object-fit: cover; /* Scale image to cover */
+}
+
+/* Footer section */
+.project-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px; /* Adjust padding as needed */
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+.github-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.github-icon {
+  font-size: 1.5rem; /* Adjust icon size as needed */
+}
